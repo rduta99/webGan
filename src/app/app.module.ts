@@ -8,6 +8,9 @@ import { MainComponent } from './main/main.component';
 import { CourseComponent } from './course/course.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { FooterComponent } from './footer/footer.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { FlashdataComponent } from './flashdata/flashdata.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { FooterComponent } from './footer/footer.component';
     MainComponent,
     CourseComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    LoginComponent,
+    RegisterComponent,
+    FlashdataComponent
   ],
   imports: [
     BrowserModule,
