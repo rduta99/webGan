@@ -1,10 +1,16 @@
-<div class="row">
+<div @fade class="row">
   <div class="col-md-3">
     <div class="card">
       <img src="/src/assets/img/msql1.png" alt="" class="card-image img-fluid">
       <div class="card-body">
         <h4 class="card-title">Judul Course</h4>
         Penjelasan singkat course
+        <br> 
+        <a [routerLink]="['/login']">
+          <button class="btn btn-sm btn-primary">
+            Test
+          </button>
+        </a>
       </div>
     </div>
   </div>
