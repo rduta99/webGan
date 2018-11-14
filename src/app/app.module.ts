@@ -12,6 +12,8 @@ import { FooterComponent } from './footer/footer.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { FlashdataComponent } from './flashdata/flashdata.component';
+import { InsComponent } from './ins/ins.component';
+import { MyCourseComponent } from './my-course/my-course.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { FlashdataComponent } from './flashdata/flashdata.component';
     FooterComponent,
     LoginComponent,
     RegisterComponent,
-    FlashdataComponent
+    FlashdataComponent,
+    InsComponent,
+    MyCourseComponent
   ],
   imports: [
     BrowserModule,
@@ -32,4 +36,6 @@ import { FlashdataComponent } from './flashdata/flashdata.component';
   providers: [RegistService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+  
+}

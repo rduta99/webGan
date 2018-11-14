@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { RegistService } from "../regist.service";
 
 @Component({
   selector: 'app-navbar',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  public login: boolean;
 
-  constructor() { }
+  constructor(private regist: RegistService) { 
+    
+  }
 
   ngOnInit() {
+    
   }
 
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, transition, animate, style, state } from '@angular/animations';
+import { RegistService } from "../regist.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: 'app-login',
@@ -17,7 +19,9 @@ import { trigger, transition, animate, style, state } from '@angular/animations'
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  constructor(private cek: RegistService, private router: Router) { 
+    
+  }
 
   ngOnInit() {
   }

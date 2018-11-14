@@ -4,6 +4,8 @@ import { MainComponent } from './main/main.component';
 import { CourseComponent } from "./course/course.component";
 import { LoginComponent } from "./login/login.component";
 import { RegisterComponent } from "./register/register.component";
+import { InsComponent } from "./ins/ins.component";
+import { MyCourseComponent } from "./my-course/my-course.component";
 
 const routes: Routes = [
   {
@@ -21,6 +23,14 @@ const routes: Routes = [
   {
     path: 'register',
     component: RegisterComponent
+  },
+  {
+    path: 'ins',
+    component: InsComponent
+  },
+  {
+    path: 'myCourse',
+    component: MyCourseComponent
   }
 ];
 
@@ -29,4 +39,7 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
-export const Routing = [MainComponent, CourseComponent, LoginComponent, RegisterComponent]
+export const Routing = [
+  MainComponent, CourseComponent, LoginComponent, RegisterComponent, InsComponent,
+  MyCourseComponent
+]
