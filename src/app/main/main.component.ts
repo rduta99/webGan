@@ -7,10 +7,10 @@ import { trigger, transition, style, animate, state } from '@angular/animations'
   styleUrls: ['./main.component.css'],
   animations: [
     trigger('fade', [
-      state('void', style({opacity: 0})),
+      state('void', style({opacity: 0, transform: "translateY(15%)"})),
 
       transition('void => *', [
-        animate(1000)
+        animate(2000)
       ]),
 
       transition('* => void', [
