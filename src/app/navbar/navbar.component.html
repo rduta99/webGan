@@ -1,20 +1,25 @@
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark shadow-sm">
+<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-transparent shadow-sm">
     <div class="container">
-        <a class="navbar-brand" href="#">IT FEST POLSRI</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="#">
+            <img src="./src/assets/img/logo1.png" alt="" height="40" srcset="">
+        </a>
+        <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav my-2 my-lg-0 ml-auto">
-                <li class="nav-item">
+                <li class="nav-item text-center">
+                    <a [routerLink]="['/']" routerLinkActive="router-link-active"  class="nav-link">Beranda</a>
+                </li>
+                <li class="nav-item text-center">
                     <a [routerLink]="['/course']" class="nav-link">Course</a>
                 </li>
-                <li class="nav-item ml-3">
-                    <a [routerLink]="['/login']" class="nav-link btn btn-sm btn-primary text-white">Masuk</a>
+                <li class="nav-item my-1 mx-2">
+                    <button [routerLink]="['/login']" routerLinkActive="router-link-active"  class="btn btn-info btn-sm w-100 rounded-0">Masuk</button>
                 </li>
-                <li class="nav-item ml-3">
-                    <a class="nav-link btn btn-sm btn-outline-info text-info">Daftar</a>
+                <li class="nav-item my-1 mx-2">
+                    <button [routerLink]="['/register']" routerLinkActive="router-link-active"  class="btn btn-sm btn-outline-info w-100 rounded-0">Daftar</button>
                 </li>
             </ul>
         </div>

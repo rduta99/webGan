@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { RegistService } from '../regist.service';
 
 @Component({
   selector: 'app-register',
@@ -15,8 +16,9 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ]
 })
 export class RegisterComponent implements OnInit {
+  public cek: boolean;
 
-  constructor() { }
+  constructor(private ceks: RegistService) { }
 
   ngOnInit() {
   }
